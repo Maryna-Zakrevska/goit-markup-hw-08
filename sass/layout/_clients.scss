@@ -1,26 +1,26 @@
 .section--clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .title__section--clients {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.17;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   color: $text-color-main;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .clients {
   display: flex;
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  flex-direction: row;
+  flex-basis: calc((100% - 4 * 15px) / 2);
+
   &__link {
-    display: flex;
-    width: 170px;
+    display: block;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
