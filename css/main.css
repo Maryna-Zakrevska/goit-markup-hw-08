@@ -583,6 +583,11 @@ img {
   padding-bottom: 30px;
 }
 
+.features__item {
+  width: 450px;
+  height: 226px;
+}
+
 .features__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -595,6 +600,7 @@ img {
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .features__text {
@@ -605,7 +611,6 @@ img {
 
 .features__thumb {
   display: flex;
-  width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   justify-content: center;
@@ -689,6 +694,7 @@ img {
 
 .team__item {
   width: 450px;
+  height: 622px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -699,8 +705,9 @@ img {
 }
 
 .team__image {
-  margin-right: auto;
-  margin-left: auto;
+  display: block;
+  width: 450px;
+  height: 460px;
 }
 
 .team__card {
@@ -778,13 +785,14 @@ img {
 
 .clients {
   display: flex;
-  flex-direction: row;
-  flex-basis: calc((100% - 4 * 15px) / 2);
+  flex-wrap: wrap;
+  width: 450px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .clients__link {
-  display: block;
-  width: 210px;
+  display: flex;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -799,6 +807,12 @@ img {
 .clients__link:hover, .clients__link:focus {
   fill: #2196f3;
   border-color: #2196f3;
+}
+
+.clients__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100%-2 * 30) / 2);
 }
 
 .footer {

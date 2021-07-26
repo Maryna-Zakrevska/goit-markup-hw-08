@@ -15,12 +15,13 @@
 
 .clients {
   display: flex;
-  flex-direction: row;
-  flex-basis: calc((100% - 4 * 15px) / 2);
+  flex-wrap: wrap;
+  width: 450px;
+  margin-top: -30px;
+  margin-left: -30px;
 
   &__link {
-    display: block;
-    width: 210px;
+    display: flex;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -36,5 +37,15 @@
       fill: $background-color-accent;
       border-color: $background-color-accent;
     }
+  }
+
+  &__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100%-2 * 30) / 2);
+
+    // &:not(:last-child) {
+    //   margin-bottom: 30px;
+    // }
   }
 }

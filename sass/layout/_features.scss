@@ -4,6 +4,11 @@
 }
 
 .features {
+  &__item {
+    width: 450px;
+    height: 226px;
+  }
+
   &__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -15,6 +20,7 @@
     text-transform: uppercase;
     color: $text-color-main;
     margin-bottom: 10px;
+    text-align: center;
   }
   &__text {
     line-height: 1.71;
@@ -23,7 +29,6 @@
   }
   &__thumb {
     display: flex;
-    width: 270px;
     height: 120px;
     background-color: $background-color-gray;
     justify-content: center;

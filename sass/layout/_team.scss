@@ -18,6 +18,7 @@
   display: block;
   &__item {
     width: 450px;
+    height: 622px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: $background-color-main;
@@ -28,8 +29,9 @@
   }
 
   &__image {
-    margin-right: auto;
-    margin-left: auto;
+    display: block;
+    width: 450px;
+    height: 460px;
   }
 
   &__card {
