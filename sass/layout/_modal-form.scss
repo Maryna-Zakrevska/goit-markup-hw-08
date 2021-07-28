@@ -5,7 +5,7 @@
   &__title {
     font-weight: bold;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: $text-color-main;
@@ -63,6 +63,7 @@
     margin-left: auto;
     padding: 10px 55px;
     cursor: pointer;
+    margin-top: 31px;
 
     font-weight: bold;
     font-size: 16px;
@@ -103,17 +104,22 @@
   }
 }
 
+// .modal-checkbox__container {
+//   display: flex;
+//   text-align: center;
+//   align-items: center;
+//   justify-content: center;
+// }
+
 .modal-checkbox__label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: $text-color-secondary;
   margin-bottom: 30px;
 
   &::before {
-    display: block;
+    display: inline-block;
     width: 16px;
     height: 15px;
     border: 2px solid $text-color-main;
