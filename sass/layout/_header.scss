@@ -4,6 +4,12 @@
   border-bottom: 1px solid #ececec;
 }
 
+.navigation-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 // .container--header {
 //   display: flex;
 //   text-align: center;
