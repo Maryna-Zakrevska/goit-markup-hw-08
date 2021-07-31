@@ -1,11 +1,17 @@
 .section--features {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0;
+  min-width: 767px;
+}
+
+.features__container {
+  margin: 0 auto;
 }
 
 .features {
   &__item {
-    width: 450px;
+    max-width: 450px;
     height: 226px;
   }
 

@@ -294,7 +294,7 @@ img {
   text-decoration: none;
 }
 
-.navigation-block__list,
+.navigation,
 .contacts-header,
 .features,
 .work,
@@ -310,11 +310,12 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 480px;
+    max-width: 480px;
     margin: 0 auto;
   }
 }
@@ -418,7 +419,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.navigation-block {
+.navigation-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -435,7 +436,6 @@ img {
 
 .header__button {
   display: inline-flex;
-  margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -453,14 +453,126 @@ img {
   display: none;
 }
 
-.container--desktop {
+.navigation {
   display: none;
 }
 
+.contacts-header {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .logo--header {
+    margin-right: 88px;
+  }
+  .navigation-header {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .header__button.is-open {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .navigation__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .navigation__list {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  .navigation__link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .navigation__link:hover, .navigation__link:focus {
+    color: #2196f3;
+  }
+  .navigation__link.current {
+    color: #2196f3;
+    position: relative;
+  }
+  .navigation__link.current::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 30px;
+    background-color: #2196f3;
+  }
+  .contacts-header {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+  }
+  .contacts-header__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .contacts-header__link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    fill: #757575;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-header__link:hover, .contacts-header__link:focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+  .contacts-header__text {
+    display: block;
+  }
+  .contacts-header__icon--mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  .contacts-header__icon--tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
+
 .hero {
-  background: #2f303a;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding: 118px 0;
+  margin: 0;
+  max-width: 767px;
+  min-height: 400px;
+  text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
+  }
+}
+
+.hero__container {
   text-align: center;
 }
 
@@ -500,64 +612,56 @@ img {
   background-color: #188ce8;
 }
 
-.hero--overlay {
-  height: 400px;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
-}
-
-@media (min-device-pixel-ratio: 2) and (min-width: 320px), (min-resolution: 192dpi) and (min-width: 320px), (min-resolution: 2dppx) and (min-width: 320px) {
-  .hero--overlay {
-    height: 400px;
-    max-width: 480px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .hero--overlay {
-    height: 400px;
-    max-width: 768px;
+  .hero {
+    max-width: 1199px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
-  .hero--overlay {
-    height: 400px;
-    max-width: 768px;
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .hero--overlay {
-    height: 600px;
+  .hero {
+    min-height: 600px;
     max-width: 1600px;
+    padding: 200px 0;
+    background-color: #2f303a;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
-  .hero--overlay {
-    height: 600px;
-    max-width: 1600px;
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop@2x.jpg);
   }
 }
 
+@media screen and (min-width: 1200px) {
+  __title {
+    min-width: 610px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .section--features {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0;
+  min-width: 767px;
+}
+
+.features__container {
+  margin: 0 auto;
 }
 
 .features__item {
-  width: 450px;
+  max-width: 450px;
   height: 226px;
 }
 
