@@ -3,7 +3,7 @@
   padding-bottom: 60px;
 }
 
-.title__section--clients {
+.section--clients__title {
   font-size: 28px;
   font-weight: bold;
   line-height: 1.18;
@@ -16,14 +16,13 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
-
-  width: 450px;
   margin-bottom: -30px;
   margin-right: -30px;
   margin-left: 15px;
 
   &__link {
     display: flex;
+    max-width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;

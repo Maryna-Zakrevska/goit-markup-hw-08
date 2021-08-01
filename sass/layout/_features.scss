@@ -79,10 +79,7 @@
     padding-bottom: 47px;
   }
   
-  .features {
-    display: flex;
-    flex-wrap: wrap;
-    
+  .features {  
   
     &__item {
       flex-basis: calc((100% - 120px) / 4);
