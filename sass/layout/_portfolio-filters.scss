@@ -1,8 +1,18 @@
+.portfolio-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .filters {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-bottom: 40px;
+  max-width: 450px;
+
+  &__item {
+    margin-bottom: 15px;
+  }
 
   &__item:not(:last-child) {
     margin-right: 8px;

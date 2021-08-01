@@ -1167,15 +1167,20 @@ img {
 }
 
 .portfolio-page {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .filters {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-bottom: 40px;
+  max-width: 450px;
+}
+
+.filters__item {
+  margin-bottom: 15px;
 }
 
 .filters__item:not(:last-child) {
