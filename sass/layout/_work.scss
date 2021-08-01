@@ -8,18 +8,22 @@
   .section--work {
     padding-top: 47px;
     padding-bottom: 94px;
+
+    &__title {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: $text-color-main;
+      margin-bottom: 50px;
+    }
   }
-  
-  .title__section--work {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $text-color-main;
-    margin-bottom: 50px;
+
+  .work--container {
+    margin: 0 auto;
   }
-  
+    
   .img-container {
     position: relative;
     max-width: 370px;
