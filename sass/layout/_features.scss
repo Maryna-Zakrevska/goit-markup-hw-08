@@ -1,8 +1,6 @@
 .section--features {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin: 0;
-  min-width: 767px;
 }
 
 .features__container {
@@ -12,7 +10,7 @@
 .features {
   &__item {
     max-width: 450px;
-    height: 226px;
+    min-height: 226px;
   }
 
   &__item:not(:last-child) {
@@ -20,7 +18,7 @@
   }
   &__title {
     font-weight: bold;
-    font-size: inherit;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -35,7 +33,8 @@
   }
   &__thumb {
     display: flex;
-    height: 120px;
+    max-width: 450px;
+    min-height: 120px;
     background-color: $background-color-gray;
     justify-content: center;
     align-items: center;
@@ -46,3 +45,5 @@
     height: 70px;
   }
 }
+
+

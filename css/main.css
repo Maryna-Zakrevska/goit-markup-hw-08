@@ -316,19 +316,18 @@ img {
 @media screen and (max-width: 767px) {
   .container {
     max-width: 480px;
-    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -556,7 +555,7 @@ img {
 
 .hero {
   padding: 118px 0;
-  margin: 0;
+  margin: 0 auto;
   max-width: 767px;
   min-height: 400px;
   text-align: center;
@@ -652,8 +651,6 @@ img {
 .section--features {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin: 0;
-  min-width: 767px;
 }
 
 .features__container {
@@ -662,7 +659,7 @@ img {
 
 .features__item {
   max-width: 450px;
-  height: 226px;
+  min-height: 226px;
 }
 
 .features__item:not(:last-child) {
@@ -671,7 +668,7 @@ img {
 
 .features__title {
   font-weight: bold;
-  font-size: inherit;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -688,7 +685,8 @@ img {
 
 .features__thumb {
   display: flex;
-  height: 120px;
+  max-width: 450px;
+  min-height: 120px;
   background-color: #f5f4fa;
   justify-content: center;
   align-items: center;
