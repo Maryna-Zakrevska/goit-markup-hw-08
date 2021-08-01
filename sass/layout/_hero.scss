@@ -108,10 +108,11 @@
         ),
         url(../images/hero-desktop@2x.jpg);
     }
-  }
-  &__title {
-    min-width: 610px;
-    font-size: 44px;
-    line-height: 1.36;
+
+    &__title {
+      min-width: 610px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }
