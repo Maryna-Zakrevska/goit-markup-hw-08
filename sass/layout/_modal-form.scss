@@ -111,8 +111,7 @@
 }
 
 .modal-checkbox__label {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -139,5 +138,6 @@
 }
 
 .modal-checkbox__link {
+  display: block;
   color: $text-color-accent;
 }
