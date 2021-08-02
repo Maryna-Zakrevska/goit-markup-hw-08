@@ -384,12 +384,12 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
+  width: 300px;
+  height: 580px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px;
+  padding: 30px 10px 10px 10px;
 }
 
 .modal__button {
@@ -412,6 +412,21 @@ img {
 
 .modal__button:hover, .modal__button:focus {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .header {
@@ -1401,11 +1416,9 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 15px auto 0 auto;
   padding: 10px 55px;
   cursor: pointer;
-  margin-top: 31px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
@@ -1443,17 +1456,25 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-checkbox__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
 .modal-checkbox__label {
   display: flex;
+  flex-wrap: wrap;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-bottom: 30px;
 }
 
 .modal-checkbox__label::before {
-  display: block;
+  display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;

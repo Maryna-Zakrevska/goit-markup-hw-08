@@ -23,13 +23,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
+  width: 300px;
+  height: 580px;
   background-color: $background-color-main;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px;
+  padding: 30px 10px 10px 10px;
 
   &__button {
     position: absolute;
@@ -54,4 +54,22 @@
       fill: $background-color-accent;
     }
   }
+}
+
+
+
+@media screen and (min-width: 480px) {
+  .modal {
+  width: 450px;
+  height: 609px;
+  padding: 40px;
+}
+}
+
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+}
 }
