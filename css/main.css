@@ -1055,9 +1055,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
+.footer-contacts__link:hover, .footer-contacts__link:focus {
   color: #2196f3;
+}
+
+.social-list--footer {
+  margin-top: 20px;
 }
 
 .footer-socials {
@@ -1071,10 +1074,6 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-}
-
-.social-list--footer {
-  margin-top: 20px;
 }
 
 .footer-socials__item {
@@ -1099,8 +1098,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-socials__link:hover,
-.footer-socials__link:focus {
+.footer-socials__link:hover, .footer-socials__link:focus {
   background-color: #2196f3;
 }
 
@@ -1150,13 +1148,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-form__bottom:hover,
-.footer-form__bottom:focus {
+.footer-form__bottom:hover, .footer-form__bottom:focus {
   background-color: #188ce8;
 }
 
 .footer-form__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1171,6 +1168,11 @@ img {
 
 .footer-form__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__input:hover, .footer-form__input:focus {
+  outline: none;
+  border-color: #ffffff;
 }
 
 .footer-form__icon {
