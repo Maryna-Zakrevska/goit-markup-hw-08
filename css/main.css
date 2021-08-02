@@ -1183,6 +1183,38 @@ img {
   transform: translateY(-50%);
 }
 
+@media screen and (min-width: 768px) {
+  .container.container--footer {
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+  .footer-tablet {
+    display: flex;
+  }
+  .footer-contacts {
+    min-width: 232px;
+  }
+  .footer-socials {
+    margin-top: 5px;
+    margin-left: 165px;
+  }
+  .footer-form__input {
+    max-width: 450px;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .container--footer {
+    display: flex;
+  }
+}
+
 .portfolio-page {
   padding-top: 60px;
   padding-bottom: 60px;
