@@ -482,12 +482,6 @@ img {
   height: 16px;
 }
 
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
 .mobile-menu {
   position: fixed;
   z-index: 100;
@@ -499,6 +493,12 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .mobile-menu__container {
@@ -588,7 +588,7 @@ img {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .hero {
