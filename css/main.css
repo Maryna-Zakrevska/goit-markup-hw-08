@@ -503,7 +503,7 @@ img {
 
 .mobile-menu__container {
   position: relative;
-  padding: 48px 40px;
+  padding: 6vh 8vw;
 }
 
 .mobile-menu__close-button {
@@ -664,7 +664,7 @@ img {
   }
   .mobile-menu__container {
     position: relative;
-    padding: 48px 40px;
+    padding: 6vh 8vw;
   }
   .mobile-menu__close-button {
     position: absolute;
