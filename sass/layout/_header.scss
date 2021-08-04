@@ -124,7 +124,7 @@
     }
   }
   &__item:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: 4vh;
     }
 }
 
@@ -134,7 +134,7 @@
 
 
   &__item:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: 4vh;
   }
 
   &__link-tel {
@@ -158,7 +158,7 @@
 .socials-mobile {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 64px;
+  margin-top: 8vh;
 
   &__link {
     font-weight: 500;
@@ -311,7 +311,7 @@
       }
     }
     &__item:not(:last-child) {
-      margin-bottom: 32px;
+      margin-bottom: 4vh;
       }
   }
   
@@ -320,7 +320,7 @@
     margin-top: 38vh;
   
     &__item:not(:last-child) {
-      margin-bottom: 32px;
+      margin-bottom: 4vh;
     }
   
     &__link-tel {
@@ -344,7 +344,7 @@
   .socials-mobile {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 64px;
+    margin-top: 8vh;
   
     &__link {
       font-weight: 500;
