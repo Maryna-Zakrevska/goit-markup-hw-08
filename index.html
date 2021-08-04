@@ -44,7 +44,7 @@
 
             </nav>
 
-            <button type="button" class="burger-button">
+            <button data-menu-open type="button" class="burger-button">
                 <svg class="burger-button__icon" aria-label="Переключатель мобильного меню">
                     <use class="button--menu" href="./images/icons.svg#icon-menu_btnmob"></use>
                 </svg>
@@ -52,23 +52,23 @@
 
         </div>
 
-        <div class="mobile-menu">
+        <div data-menu class="mobile-menu">
             <div class="container mobile-menu__container">
-            <button type="button" class="mobile-menu__close-button">
+            <button data-menu-close type="button" class="mobile-menu__close-button">
                 <svg class="mobile-menu__close-icon" aria-label="Кнопка закрытия мобильного меню">
                     <use class="button--menu" href="./images/icons.svg#icon-close_btnmob"></use>
                 </svg>
             </button>
             <ul class="nav-mobile">
-                <li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Студия</a></li>
-                <li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Портфолио</a></li>
+                <li class="nav-mobile__item"><a class="nav-mobile__link current" href="./index.html">Студия</a></li>
+                <li class="nav-mobile__item"><a class="nav-mobile__link" href="./portfolio.html">Портфолио</a></li>
                 <li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Контакты</a></li>
             </ul>
 
             <ul class="contacts-mobile">
-                <li class="contacts-mobile__item"><a class="contacts-mobile__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="contacts-mobile__item"><a class="contacts-mobile__link-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 
-                <li class="contacts-mobile__item"><a class="contacts-mobile__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>  
+                <li class="contacts-mobile__item"><a class="contacts-mobile__link-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>  
             </ul>
 
             <ul class="socials-mobile">
@@ -630,6 +630,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

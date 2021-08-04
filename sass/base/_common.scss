@@ -32,7 +32,11 @@ img {
 .navigation-block__link,
 .contacts-header__link,
 .footer-contacts__link,
-.gallery__link {
+.gallery__link,
+.nav-mobile__link,
+.contacts-mobile__link-tel,
+.contacts-mobile__link-email,
+.socials-mobile__link {
   text-decoration: none;
 }
 
@@ -45,6 +49,9 @@ img {
 .social-list,
 .footer-contacts__list,
 .filters,
-.gallery {
+.gallery,
+.nav-mobile,
+.contacts-mobile,
+.socials-mobile {
   list-style: none;
 }
