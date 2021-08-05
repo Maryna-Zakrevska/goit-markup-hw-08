@@ -20,7 +20,6 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $text-color-main;
     margin-bottom: 10px;
@@ -28,7 +27,6 @@
   }
   &__text {
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: $text-color-secondary;
   }
   &__thumb {

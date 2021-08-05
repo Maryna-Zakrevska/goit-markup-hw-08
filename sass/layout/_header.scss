@@ -106,7 +106,7 @@
   &__link {
     font-weight: 500;
     font-size: 34px;
-    line-height: 40px;
+    line-height: 1.18;
     letter-spacing: 0.02em;
     color: $text-color-main;
     
@@ -140,7 +140,7 @@
   &__link-tel {
     font-weight: 500;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: $text-color-accent;
     }
@@ -148,7 +148,7 @@
   &__link-email {
     font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     letter-spacing: 0.02em;
     color: $text-color-secondary;
     }
@@ -162,8 +162,7 @@
 
   &__link {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.02em;
     color: $text-color-accent;
     }
@@ -188,18 +187,18 @@
     
   .nav-mobile__link {
       font-size: 40px;
-      line-height: 47px;
+      line-height: 1.18;
   }
     
   .contacts-mobile {
   &__link-tel {
     font-size: 34px;
-    line-height: 40px;
+    line-height: 1.18;
     }
 
   &__link-email {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.17;
   }
   }
   
@@ -207,7 +206,7 @@
   .socials-mobile {
     &__link {
       font-size: 18px;
-      line-height: 22px;
+      line-height: 1.22;
       }
   
     &__item:not(:last-child) {
@@ -220,112 +219,155 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  
+  
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  .navigation-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .burger-button {
+    display: none;
+    }
+  
+  .navigation {
+    display: flex;
+    margin-left: 88px;
+
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
 
 
-// @media screen and (min-width: 768px) {
-//   .logo--header {
-//     margin-right: 88px;
-//   }
+    &__link {
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $text-color-main;
+      
+      transition-property: color;
+      transition-duration: $transition-duration;
+      transition-timing-function: $timing-function;
+      
+      &:hover,
+      &:focus {
+      color: $text-color-accent;
+      }
+      
+      &.current {
+        color: $text-color-accent;
+        position: relative;
+      }
 
-//   .navigation-header {
-//     display: flex;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//   }
+      &.current::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        margin-top: 29px;
+        background-color: $background-color-accent;
+        }
+    }
+    
+  }
+  
 
-//   .header__button.is-open {
-//     display: none;
-//   }
+  .contacts-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 84px;
 
-//   .navigation {
-//     display: flex;
-//     align-items: center;
+    &__link {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: $text-color-secondary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      fill: $text-color-secondary;
+      
+    transition-property: color, fill;
+    transition-duration: $transition-duration;
+    transition-timing-function: $timing-function;
+      
+    &:hover,
+    &:focus {
+    color: $text-color-accent;
+    fill: $background-color-accent;
+    }
+    }
 
-//     &__item:not(:last-child) {
-//       margin-right: 50px;
-//     }
+    &__item:not(:last-child){
+      margin-bottom: 10px;
+    }
 
-//     &__list {
-//       display: flex;
-//       text-align: center;
-//       align-items: center;
-//     }
+    &__text {
+     display: block;
+    }
 
-//     &__link {
-//       font-weight: 500;
-//       line-height: 1.14;
-//       letter-spacing: 0.02em;
-//       color: $text-color-main;
+    &__icon--mail {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    }
 
-//       transition-property: color;
-//       transition-duration: $transition-duration;
-//       transition-timing-function: $timing-function;
+    &__icon--tel {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+      }
+     }
 
-//       &:hover,
-//       &:focus {
-//         color: $text-color-accent;
-//       }
-//       &.current {
-//         color: $text-color-accent;
-//         position: relative;
-//       }
-//       &.current::after {
-//         position: absolute;
-//         display: block;
-//         content: "";
-//         width: 100%;
-//         height: 4px;
-//         border-radius: 2px;
-//         margin-top: 30px;
-//         background-color: $background-color-accent;
-//       }
-//     }
-//   }
+  }
 
-//   .contacts-header {
-//     display: flex;
-//     flex-direction: column;
-//     margin-left: auto;
-//     text-align: center;
-//     align-items: center;
+  @media screen and (min-width: 1200px) {
+    .header {
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
+  
+            
+    .navigation {
+      margin-left: 93px;
+    }
+    
+  
+    .contacts-header {
+      flex-direction: row;
+      align-items: center;
+      margin-left: 305px;
+  
+      &__link {
+        line-height: 1.14;
+      }
 
-//     &__item:not(:last-child) {
-//       margin-right: 50px;
-//     }
-
-//     &__link {
-//       font-weight: 500;
-//       line-height: 1.14;
-//       letter-spacing: 0.02em;
-//       color: $text-color-secondary;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       padding: 0;
-//       fill: $text-color-secondary;
-
-//       transition-property: color, fill;
-//       transition-duration: $transition-duration;
-//       transition-timing-function: $timing-function;
-
-//       &:hover,
-//       &:focus {
-//         color: $text-color-accent;
-//         fill: $background-color-accent;
-//       }
-//     }
-//     &__text {
-//       display: block;
-//     }
-//     &__icon--mail {
-//       width: 16px;
-//       height: 12px;
-//       margin-right: 10px;
-//     }
-//     &__icon--tel {
-//       width: 10px;
-//       height: 16px;
-//       margin-right: 10px;
-//     }
-//   }
-// }
+      &__item:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 30px;
+      }
+   
+      &__icon--mail {
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+      }
+  
+      &__icon--tel {
+      width: 10px;
+      height: 16px;
+      margin-right: 10px;
+        }
+       }
+  }
