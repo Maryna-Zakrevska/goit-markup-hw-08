@@ -15,8 +15,8 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -30px;
-  margin-right: -30px;
+  margin-top: -30px;
+  margin-left: -30px;
 
   &__link {
     display: flex;
@@ -39,8 +39,8 @@
   }
 
   &__item {
-    margin-bottom: 30px;
-    margin-right: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
 }
